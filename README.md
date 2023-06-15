@@ -44,13 +44,14 @@ hardcoded number of tokens, constructs a new datafile with new lines, returns th
 new path
 
 ### train_model():
-Trains a given model on the specified training files for the MLM task. 
+Trains a given model on the specified training files for the MLM task. Saves the
+model after each epoch if the file path is provided.
 
 
 ## USAGE:
 
 - Initialize the first model and tokenizer
-- The first model is not passed to prepare_model_for_new_pahase() because this is the
+- The first model is not passed to prepare_model_for_new_phase() because this is the
 first model to be trained.
 - Train the first model with specified training files (for phase 1)
 - Initialize the second model and its tokenizer.
